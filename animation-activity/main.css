@@ -39,6 +39,58 @@ a {
   color: rebeccapurple;
   text-shadow: 1px 1px 2px darkgrey;
 }
+
+
+
+
 a:hover {
   color: ghostwhite;
+  
+  transform:movediv1 5s;
+  animation: removediv 2s;
+  transform: movediv2 5s;
 }
+
+#top{
+
+  transform:removediv1 5s;
+}
+
+#middle{
+
+
+  animation:removediv 1s;
+   display:none 2s; 
+
+}
+
+#bottom{
+
+  transform:movediv2 5s;
+}
+
+  @keyframes movediv1{
+   0% { transform: rotate (0deg);
+   }
+   100% { transform: rotate(45deg);
+
+   }}
+ 
+   @keyframes removediv{  
+      0%  {
+        opacity:1;
+      }
+      100% {
+        
+        opacity:0 ;
+      }
+ }
+
+ @keyframes movediv2{
+  0% {transform:rotate (0 deg);
+  }
+  100% {transform: rotate(45deg);
+  }
+ }
+
+
